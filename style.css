@@ -1,0 +1,143 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: sans-serif;
+	margin: 0;
+}
+
+#wrapper {
+	max-width: 10cm;
+	margin: auto;
+}
+
+section {
+	padding: 8px;
+}
+
+select, input, button {
+	font-size: inherit;
+}
+
+.day,
+.month,
+.year,
+.dow {
+	text-align: center;
+}
+
+.month-view {
+	margin: auto;
+}
+
+.month-view td,
+.month-view th {
+	text-align: right;
+}
+
+td.match {
+	background-color: yellow;
+}
+
+.day {
+	font-size: 1000%;
+	font-weight: bold;
+	margin: -0.15em 0;
+}
+
+.month,
+.dow,
+.month-view {
+	font-size: 150%;
+}
+
+.dow {
+	font-weight: bold;
+}
+
+.day-sunday .dow,
+.day-sunday .day,
+table .day-sunday,
+.day-holiday .dow,
+.day-holiday .day,
+table .day-holiday {
+	color: red;
+}
+.day-saturday .dow,
+.day-saturday .day,
+table .day-saturday {
+	color: #a22;
+}
+
+img.moon {
+	width: 80px;
+	height: 80px;
+	float: left;
+	margin-right: 1em;
+}
+
+.clear {
+	clear: left;
+	display: block;
+}
+
+.dayview li {
+	list-style: none;
+}
+
+nav.top img {
+	width: 24px;
+	float: right;
+}
+
+nav.top img:first-child {
+	float: left;
+}
+
+nav.bottom {
+	display: table;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	background-color: #111;
+}
+
+nav.bottom button {
+	display: table-cell;
+	height: 2em;
+	background-color: #222;
+	color: #FFF;
+	border: 2px solid #000;
+}
+
+#container {
+	padding-bottom: 2.2em;
+}
+
+#search-input {
+	float: right;
+	width: 75%;
+	margin: 8px;
+	display: none;
+}
+
+.search-visible #search-input {
+	display: inline;
+}
+
+.search-visible .year {
+	clear: both;
+}
+
+#search-input.no-match {
+	background-color: #f88;
+}
+
+#date-input {
+	position: absolute;
+	left: -9999em;
+	top: 0;
+}

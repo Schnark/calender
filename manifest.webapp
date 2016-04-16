@@ -1,0 +1,28 @@
+{
+	"version": "1.3",
+	"name": "Tageskalender",
+	"description": "Kalender mit verschiedenen Informationen für jeden Tag",
+	"launch_path": "/index.html",
+	"icons": {
+		"128": "/img/icon128.png",
+		"512": "/img/icon512.png"
+	},
+	"developer": {
+		"name": "Michael Müller",
+		"url": "https://github.com/Schnark"
+	},
+	"installs_allowed_from": ["*"],
+	"default_locale": "de",
+	"locales": {
+		"en": {
+			"name": "Day calender",
+			"description": "Calender with different information about each day"
+		}
+	},
+	"permissions": {
+		"geolocation": {
+			"description": "Show times for sun-/moon- -rise/-set for current location"
+		}
+	},
+	"orientation": "portrait"
+}
