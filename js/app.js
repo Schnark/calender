@@ -3,7 +3,7 @@
 (function () {
 "use strict";
 
-var currentView, currentDate, currentSearch;
+var currentView, currentConfig, currentDate, currentSearch;
 
 function initEvents (swipe, click, input) {
 	var startX = 0, startY = 0, body = document.getElementsByTagName('body')[0];
@@ -55,18 +55,21 @@ function showDay () {
 	var html = renderDay(currentDate.getDate(), currentDate.getMonth() + 1, currentDate.getFullYear(), settings.get());
 	document.getElementById('content').innerHTML = html;
 	currentView = 'date';
+	currentConfig = false;
 }
 
 function showMonth () {
 	var html = renderMonth(currentDate.getMonth() + 1, currentDate.getFullYear(), settings.get(), currentSearch);
 	document.getElementById('content').innerHTML = html;
 	currentView = 'month';
+	currentConfig = false;
 }
 
 function showSettings () {
 	var html = renderSettings(settings.get());
 	toggleSearch(false);
 	document.getElementById('content').innerHTML = html;
+	currentConfig = true;
 }
 
 function toggleSearch (on) {
@@ -154,6 +157,9 @@ function incrSearch (search) {
 }
 
 function swipeHandler (dir) {
+	if (currentConfig) {
+		return;
+	}
 	if (currentView === 'date') {
 		prevNextDay(dir);
 	} else {
@@ -162,6 +168,7 @@ function swipeHandler (dir) {
 }
 
 function clickHandler (id) {
+	var geoWait, geoDone, geoFail;
 	switch (id) {
 	case 'button-config':
 		showSettings();
@@ -179,11 +186,22 @@ function clickHandler (id) {
 		focusDateSelector(currentDate);
 		break;
 	case 'button-current-location':
+		geoWait = document.getElementById('geoWait');
+		geoDone = document.getElementById('geoDone');
+		geoFail = document.getElementById('geoFail');
+		geoWait.hidden = false;
+		geoDone.hidden = true;
+		geoFail.hidden = true;
 		getLatLon(function (data) {
-			if (!data) {
-				//FIXME
+			if (!currentConfig) {
 				return;
 			}
+			geoWait.hidden = true;
+			if (!data) {
+				geoFail.hidden = false;
+				return;
+			}
+			geoDone.hidden = false;
 			document.getElementById('lat').value = data.lat;
 			document.getElementById('lon').value = data.lon;
 		});
@@ -236,7 +254,7 @@ function getLatLon (callback) {
 			callback({lat: pos.coords.latitude, lon: pos.coords.longitude});
 		}, function () {
 			callback();
-		});
+		}, {timeout: 60 * 1000, maximumAge: 60 * 1000});
 	} else {
 		callback();
 	}

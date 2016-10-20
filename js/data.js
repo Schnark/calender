@@ -400,7 +400,7 @@ days: [
 {name: {de: '3. Adventssonntag', 'de-AT': '3. Adventsonntag', en: '3. Advent Sunday'}, d: 11, m: 12, w: 0, type: 'rel-0'},
 {name: 'Damasus I.', d: 11, m: 12, type: 'rel-3'},
 {name: 'Unsere Liebe Frau von Guadalupe, Vizelin von Oldenburg', d: 12, m: 12, type: 'rel-3'},
-{name: 'Lucia von Syrakus, Odilia,', d: 13, m: 12, type: 'rel-3'},
+{name: 'Lucia von Syrakus, Odilia', d: 13, m: 12, type: 'rel-3'},
 {name: 'Berthold von Regensburg, Johannes vom Kreuz', d: 14, m: 12, type: 'rel-3'},
 {name: 'Ado von Vienne', d: 16, m: 12, type: 'rel-3'},
 {name: 'Sturmius, Ignatius von Antiochia, Olympias von Konstantinopel', d: 17, m: 12, type: 'rel-3'},
@@ -541,6 +541,7 @@ l10n: {
 		de: {
 			lang: 'Sprache: ', region: 'Region: ', riseSet: 'Auf- und Untergangszeiten',
 			lat: 'Länge: ', long: 'Breite: ', currentLocation: 'aktueller Ort',
+			geoWait: 'Koordinaten werden ermittelt …', geoDone: 'Koordinaten wurden übernommen', geoFail: 'Ermittlung der Koordinaten schlug fehl',
 			moon: 'Mond: ', none: 'keine Anzeige', phase: 'nur Mondphase', zodiac: 'auch Tierkreiszeichen',
 			thanks: 'Dank an:', 'for': ' für ',
 			heading: 'Konfiguration', save: 'Speichern', discard: 'Verwerfen',
@@ -549,6 +550,7 @@ l10n: {
 		en: {
 			lang: 'Language: ', region: 'Region: ', riseSet: 'Times for rise and set',
 			lat: 'Latitude: ', long: 'Longitude: ', currentLocation: 'current location',
+			geoWait: 'Coordinats are being retrieved …', geoDone: 'Coordinats have been updated', geoFail: 'Getting the coordinates failed',
 			moon: 'Moon: ', none: 'none', phase: 'phase only', zodiac: 'including zodiac',
 			thanks: 'Thanks to:', 'for': ' for ',
 			heading: 'Configuration', save: 'Save', discard: 'Discard',

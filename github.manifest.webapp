@@ -2,7 +2,7 @@
 	"version": "1.4",
 	"name": "Day calender",
 	"description": "Calender with different information about each day",
-	"launch_path": "/index.html",
+	"package_path": "https://schnark.github.io/calender/calender.zip",
 	"icons": {
 		"128": "/img/icon128.png",
 		"512": "/img/icon512.png"

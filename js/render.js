@@ -6,8 +6,8 @@ function renderDay (d, m, y, settings) {
 	var data = getDataForDay(d, m, y, settings), html = [], i;
 
 	html.push('<nav class="top">');
-	html.push('<img id="button-config" src="img/settings.png" />');
-	html.push('<img id="button-search" src="img/search.png" />');
+	html.push('<img id="button-config" src="img/settings.png">');
+	html.push('<img id="button-search" src="img/search.png">');
 	html.push('</nav>');
 
 	html.push('<div id="container" class="dayview day-' + data.type + '">');
@@ -16,9 +16,11 @@ function renderDay (d, m, y, settings) {
 	html.push('<div class="day">' + data.date + '</div>');
 	html.push('<div class="month">' + data.month + '</div>');
 	html.push('<div class="dow">' + data.day + '</div>'); //FIXME Reihenfolge?
+	html.push('<div class="dedication">');
 	for (i = 0; i < data.texts.length; i++) {
-		html.push('<div class="dedication">' + data.texts[i] + '</div>');
+		html.push(data.texts[i] + '<br>');
 	}
+	html.push('</div>');
 	if (data.riseSet) {
 		html.push('<ul class="rise-decline">');
 		html.push('<li class="sun-rise">' + data.riseSet.l10n.sunRise + data.riseSet.sun.rise + '</li>');
@@ -28,7 +30,7 @@ function renderDay (d, m, y, settings) {
 		html.push('</ul>');
 	}
 	if (data.moonData) {
-		html.push('<img class="moon" src="img/moon-' + data.moonData.image + '.jpg" />');
+		html.push('<img class="moon" src="img/moon-' + data.moonData.image + '.jpg">');
 		html.push('<ul class="moon-data">');
 		html.push('<li>' + data.moonData.l10n[data.moonData.phase] +
 			(data.moonData.time ? ' (' + data.moonData.time + ')' : ''));
@@ -67,8 +69,8 @@ function renderMonth (m, y, settings, search) {
 	var data = getDataForMonth(m, y, settings, search), html = [], i, j;
 
 	html.push('<nav class="top">');
-	html.push('<img id="button-config" src="img/settings.png" />');
-	html.push('<img id="button-search" src="img/search.png" />');
+	html.push('<img id="button-config" src="img/settings.png">');
+	html.push('<img id="button-search" src="img/search.png">');
 	html.push('</nav>');
 
 	html.push('<div id="container">');
@@ -125,8 +127,8 @@ function makeSlider (id, label, defaultValue) {
 	var html = [];
 	html.push('<label>');
 	html.push(label);
-	html.push('<br />');
-	html.push('<input id="' + id + '" type="range" min="0" max="4" step="1" value="' + defaultValue + '" />');
+	html.push('<br>');
+	html.push('<input id="' + id + '" type="range" min="0" max="4" step="1" value="' + defaultValue + '">');
 	html.push('</label>');
 	return html.join('');
 }
@@ -135,7 +137,7 @@ function makeNumberinput (id, label, defaultValue) {
 	var html = [];
 	html.push('<label>');
 	html.push(label);
-	html.push('<input id="' + id + '" type="number" step="any" value="' + defaultValue + '" />');
+	html.push('<input id="' + id + '" type="number" step="any" lang="en" value="' + defaultValue + '">');
 	html.push('</label>');
 	return html.join('');
 }
@@ -148,28 +150,32 @@ function renderSettings (settings) {
 	html.push('</h1></header>');
 	html.push('<p>');
 	html.push(makeSelect('lang', data.l10n.lang, data.languages, settings.lang));
-	html.push('<br />');
+	html.push('<br>');
 	html.push(makeSelect('region', data.l10n.region, data.regions, settings.region));
 	html.push('</p>');
 	html.push('<p>');
 	for (id in data.types) {
 		if (data.types.hasOwnProperty(id)) {
 			html.push(makeSlider(id, data.types[id], settings.types[id]));
-			html.push('<br />');
+			html.push('<br>');
 		}
 	}
 	html.push('</p>');
 	html.push('<p>');
 	html.push('<label>');
-	html.push('<input id="riseSet" type="checkbox"' + (settings.riseSet ? ' checked' : '') + ' />&nbsp;');
+	html.push('<input id="riseSet" type="checkbox"' + (settings.riseSet ? ' checked' : '') + '>&nbsp;');
 	html.push(data.l10n.riseSet);
 	html.push('</label>');
-	html.push('<br />');
+	html.push('<br>');
 	html.push(makeNumberinput('lat', data.l10n.lat, settings.lat));
-	html.push('<br />');
+	html.push('<br>');
 	html.push(makeNumberinput('lon', data.l10n.long, settings.lon));
-	html.push('<br />');
+	html.push('<br>');
 	html.push('<button id="button-current-location">' + data.l10n.currentLocation + '</button>');
+	html.push('<br>');
+	html.push('<span id="geoWait" hidden>' + data.l10n.geoWait + '</span>');
+	html.push('<span id="geoDone" hidden>' + data.l10n.geoDone + '</span>');
+	html.push('<span id="geoFail" hidden>' + data.l10n.geoFail + '</span>');
 	html.push('</p>');
 	html.push('<p>');
 	html.push(makeSelect('moon', data.l10n.moon, [data.l10n.none, data.l10n.phase, data.l10n.zodiac], settings.moon));

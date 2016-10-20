@@ -70,6 +70,10 @@ table .day-saturday {
 	color: #a22;
 }
 
+.dedication {
+	min-height: 3.6em; /* gleichmäßiges Aussehen beim Blättern */
+}
+
 img.moon {
 	width: 80px;
 	height: 80px;
@@ -97,6 +101,7 @@ nav.top img:first-child {
 
 nav.bottom {
 	display: table;
+	display: flex;
 	position: fixed;
 	bottom: 0;
 	left: 0;
@@ -107,8 +112,9 @@ nav.bottom {
 
 nav.bottom button {
 	display: table-cell;
+	flex-grow: 1;
 	height: 2em;
-	background-color: #222;
+	background: #222;
 	color: #FFF;
 	border: 2px solid #000;
 }
