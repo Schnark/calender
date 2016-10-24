@@ -1,5 +1,5 @@
 {
-	"version": "1.4",
+	"version": "2.0",
 	"name": "Day calender",
 	"description": "Calender with different information about each day",
 	"launch_path": "/index.html",
