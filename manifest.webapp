@@ -1,7 +1,7 @@
 {
-	"version": "2.0",
-	"name": "Day calender",
-	"description": "Calender with different information about each day",
+	"version": "2.1",
+	"name": "Day calendar",
+	"description": "Calendar with different information about each day",
 	"launch_path": "/index.html",
 	"icons": {
 		"128": "/img/icon128.png",
