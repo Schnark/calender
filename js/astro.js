@@ -176,6 +176,16 @@ function shiftDates (dates, shiftData) {
 	}
 }
 
+function equinoxSolstice (y) {
+	var y1 = (y - 2000) / 1000, y2 = y1 * y1, y3 = y2 * y1, y4 = y3 * y1;
+	return [
+		(2451623.80984 + 365242.37404 * y1 + 0.05169 * y2 - 0.00411 * y3 - 0.00057 * y4).Julian2Date(),
+		(2451716.56767 + 365241.62603 * y1 + 0.00325 * y2 + 0.00888 * y3 - 0.00030 * y4).Julian2Date(),
+		(2451810.21715 + 365242.01767 * y1 - 0.11575 * y2 + 0.00337 * y3 + 0.00078 * y4).Julian2Date(),
+		(2451900.05952 + 365242.74049 * y1 - 0.06223 * y2 - 0.00823 * y3 + 0.00032 * y4).Julian2Date()
+	];
+}
+
 window.astro = {
 	getMoonData: getMoonData,
 	getSunTimes: getSunTimes,
@@ -183,7 +193,8 @@ window.astro = {
 	getEaster: getEaster,
 	getIslamicData: getIslamicData,
 	getJewishData: getJewishData,
-	shiftDates: shiftDates
+	shiftDates: shiftDates,
+	equinoxSolstice: equinoxSolstice
 };
 window.MS_PER_DAY = MS_PER_DAY;
 

@@ -11,6 +11,11 @@
 <link rel="shortcut icon" href="icons/favicon.ico">
 <meta name="msapplication-config" content="icons/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
+<script>
+if (navigator.serviceWorker && !(navigator.mozApps && navigator.mozApps.installPackage)) {
+	navigator.serviceWorker.register('sw.js');
+}
+</script>
 <link rel="stylesheet" href="style.css">
 <script src="suncalc-master/suncalc.js"></script>
 <script src="lune-master/lib/lune.js"></script>

@@ -1,8 +1,8 @@
 {
-	"version": "2.1",
+	"version": "2.2",
 	"name": "Day calendar",
 	"description": "Calendar with different information about each day",
-	"size": 111157,
+	"size": 111653,
 	"package_path": "https://schnark.github.io/calender/calender.zip",
 	"icons": {
 		"128": "/img/icon128.png",

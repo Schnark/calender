@@ -100,7 +100,7 @@ function getDatesOtherCalender (d, m, y, data) {
 	return ret;
 }
 
-function getDate (day, year, easter, islamicData, jewishData, shiftData) {
+function getDate (day, year, easter, islamicData, jewishData, shiftData, astroData) {
 	var date, i;
 	if (
 		('y' in day && year < day.y) ||
@@ -110,6 +110,8 @@ function getDate (day, year, easter, islamicData, jewishData, shiftData) {
 	}
 	if ('e' in day) {
 		date = [new Date(easter + day.e * MS_PER_DAY)];
+	} else if ('a' in day) {
+		date = astroData[day.a] || [];
 	} else if (day.islamic) {
 		date = getDatesOtherCalender(day.d, day.m, year, islamicData);
 		astro.shiftDates(date, shiftData);
@@ -130,7 +132,14 @@ function compileYear (year, shiftData) {
 	var i, j, dates, result = [],
 		easter = astro.getEaster(year),
 		islamicData = astro.getIslamicData(year),
-		jewishData = astro.getJewishData(year);
+		jewishData = astro.getJewishData(year),
+		equinoxSolstice = astro.equinoxSolstice(year),
+		astroData = {
+			'equinoxSpring': [equinoxSolstice[0]],
+			'solsticeSummer': [equinoxSolstice[1]],
+			'equinoxFall': [equinoxSolstice[2]],
+			'solsticeWinter': [equinoxSolstice[3]]
+		};
 
 	function add (d, m, entry) {
 		if (!result[m]) {
@@ -143,7 +152,7 @@ function compileYear (year, shiftData) {
 	}
 
 	for (i = 0; i < DATA.days.length; i++) {
-		dates = getDate(DATA.days[i], year, easter, islamicData, jewishData, shiftData);
+		dates = getDate(DATA.days[i], year, easter, islamicData, jewishData, shiftData, astroData);
 		for (j = 0; j < dates.length; j++) {
 			add(dates[j].getDate() - 1, dates[j].getMonth(), DATA.days[i]);
 		}
