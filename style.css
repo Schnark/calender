@@ -147,3 +147,11 @@ nav.bottom button {
 	left: -9999em;
 	top: 0;
 }
+
+#date-input:focus {
+	position: fixed;
+	top: 2em;
+	left: 10%;
+	width: 80%;
+	display: block;
+}

@@ -224,12 +224,15 @@ function clickHandler (id) {
 }
 
 function inputHandler (id) {
+	var input;
 	switch (id) {
 	case 'search-input':
 		incrSearch(document.getElementById('search-input').value);
 		break;
 	case 'date-input':
-		exactDate(new Date(document.getElementById('date-input').value));
+		input = document.getElementById('date-input');
+		exactDate(new Date(input.value));
+		input.blur();
 		break;
 	}
 }
@@ -238,7 +241,7 @@ function focusDateSelector (date) {
 	var dateInput = document.getElementById('date-input');
 	date = date.toISOString().slice(0, 10);
 	if (dateInput.type !== 'date') {
-		date = window.prompt('', date); //FIXME
+		date = window.prompt(document.getElementById('button-choose').textContent, date);
 		if (date) {
 			exactDate(new Date(date));
 		}
