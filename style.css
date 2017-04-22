@@ -148,10 +148,13 @@ nav.bottom button {
 	top: 0;
 }
 
-#date-input:focus {
-	position: fixed;
-	top: 2em;
-	left: 10%;
-	width: 80%;
-	display: block;
+@media (min-device-width: 800px), (min-width: 600px) {
+/* on mobile devices the calendar widget is usable even if <input> is outside the view */
+	#date-input:focus {
+		position: fixed;
+		top: 2em;
+		left: 10%;
+		width: 80%;
+		display: block;
+	}
 }
