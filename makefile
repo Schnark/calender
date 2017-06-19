@@ -1,5 +1,5 @@
 NAME = calender
-CONTENTS = img js lune-master suncalc-master index.html LICENSE.txt manifest.webapp style.css
+CONTENTS = img js index.html LICENSE.txt manifest.webapp style.css
 ICONPRE = img/icon
 
 .PHONY: all

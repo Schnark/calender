@@ -66,6 +66,7 @@ days: [
 {name: 'Blasius von Sebaste, Ansgar', d: 3, m: 2, type: 'rel-3'},
 {name: 'Rabanus Maurus, Isidor von Pelusium', d: 4, m: 2, type: 'rel-3'},
 {name: 'Weltkrebstag', d: 4, m: 2, type: 'sec-2'},
+{name: 'Safer Internet Day', d: 5, m: 2, w: 2, type: 'sec-3'},
 {name: 'Adelheid von Vilich, Agatha von Catania', d: 5, m: 2, type: 'rel-3'},
 {name: 'Paul Miki', d: 6, m: 2, type: 'rel-3'},
 {name: 'Richard von Wessex', d: 7, m: 2, type: 'rel-3'},
@@ -79,6 +80,7 @@ days: [
 {name: 'Juliana von Nikomedien', d: 16, m: 2, type: 'rel-3'},
 {name: 'Sieben heiligen Gründer des Servitenordens', d: 17, m: 2, type: 'rel-3'},
 {name: 'Barbatus von Benevent', d: 19, m: 2, type: 'rel-3'},
+{name: 'Welttag der sozialen Gerechtigkeit', d: 20, m: 2, type: 'sec-2'},
 {name: 'Petrus Damian', d: 21, m: 2, type: 'rel-3'},
 {name: 'Internationaler Tag der Muttersprache', d: 21, m: 2, type: 'sec-2'},
 {name: 'Kathedra Petri', d: 22, m: 2, type: 'rel-2'},
@@ -145,8 +147,9 @@ days: [
 {name: 'Waltraud von Mons', d: 9, m: 4, type: 'rel-3'},
 {name: 'Eberwin von Helfenstein', d: 10, m: 4, type: 'rel-3'},
 {name: 'Stanislaus von Krakau', d: 11, m: 4, type: 'rel-3'},
+{name: 'Welt-Parkinson-Tag', d: 11, m: 4, type: 'sec-2'},
 {name: 'Julius I.', d: 12, m: 4, type: 'rel-3'},
-{name: 'Yuri’s Night', d: 12, m: 4, type: 'sec-3'},
+{name: 'Yuri’s Night', d: 12, m: 4, type: 'sec-2'},
 {name: 'Martin I.', d: 13, m: 4, type: 'rel-3'},
 {name: 'Tiburtius von Rom', d: 14, m: 4, type: 'rel-3'},
 {name: 'Bernadette Soubirous', d: 16, m: 4, type: 'rel-3'},
@@ -161,7 +164,7 @@ days: [
 {name: 'Welttag des Buches', d: 23, m: 4, type: 'sec-2'},
 {name: 'Robert von Turlande, Fidelis von Sigmaringen', d: 24, m: 4, type: 'rel-3'},
 {name: 'Markus, der Evangelist, Anianus von Alexandria', d: 25, m: 4, type: 'rel-3'},
-{name: 'Weltmalariatag', d: 25, m: 4, type: 'sec-2'},
+{name: 'Welt-Malaria-Tag', d: 25, m: 4, type: 'sec-2'},
 {name: 'Johannes von Valence, Cletus', d: 26, m: 4, type: 'rel-3'},
 {name: 'Welttag des geistigen Eigentums', d: 26, m: 4, type: 'sec-2'},
 {name: 'Petrus Armengol, Petrus Canisius', d: 27, m: 4, type: 'rel-3'},
@@ -211,6 +214,7 @@ days: [
 {name: 'Weltnichtrauchertag', d: 31, m: 5, type: 'sec-2'},
 //Juni
 {name: 'Simeon von Trier, Fortunatus von Todi, Justin', d: 1, m: 6, type: 'rel-3'},
+{name: 'Weltelterntag', d: 1, m: 6, type: 'sec-3'},
 {name: 'Marcellinus, Petrus', d: 2, m: 6, type: 'rel-3'},
 {name: 'Karl Lwanga', d: 3, m: 6, type: 'rel-3'},
 {name: 'Bonifatius, Adalar', d: 5, m: 6, type: 'rel-3'},
@@ -230,6 +234,7 @@ days: [
 {name: 'Benno von Meißen', d: 16, m: 6, type: 'rel-3'},
 {name: 'Tag der deutschen Einheit', d: 17, m: 6, y: 1954, Y: 1990, holiday: ['DE'], type: 'nat-0'},
 {name: 'Gedenktag an den Volksaufstand in der DDR', d: 17, m: 6, y: 1991, region: ['DE'], type: 'sec-1'},
+{name: 'Welt-Wüsten-Tag', d: 17, m: 6, type: 'sec-2'},
 {name: 'Romuald', d: 19, m: 6, type: 'rel-3'},
 {name: {de: 'Sommeranfang', en: 'Summer solstice'}, a: 'solsticeSummer', type: 'sec-0'},
 {name: 'Weltflüchtlingstag', d: 20, m: 6, type: 'sec-1'},
@@ -263,7 +268,7 @@ days: [
 {name: 'Arnold von Arnoldsweiler', d: 18, m: 7, type: 'rel-3'},
 {name: 'Nelson-Mandela-Tag', d: 18, m: 7, type: 'sec-2'},
 {name: 'Apollinaris, Margareta', d: 20, m: 7, type: 'rel-3'},
-{name: 'Gedenktag zum Attentat vom 20. Juli 1944', d: 20, m: 7, region: ['DE'], type: 'sec-1'},
+{name: 'Gedenken an den Widerstand gegen die nationalsozialistische Gewaltherrschaft', d: 20, m: 7, region: ['DE'], type: 'sec-1'},
 {name: 'Laurentius von Brindisi', d: 21, m: 7, type: 'rel-3'},
 {name: 'Maria Magdalena', d: 22, m: 7, type: 'rel-3'},
 {name: 'Birgitta von Schweden', d: 23, m: 7, type: 'rel-3'},
@@ -320,6 +325,7 @@ days: [
 {name: 'Ralph Corbie, Regina', d: 7, m: 9, type: 'rel-3'},
 {name: 'Tag des offenen Denkmals', d: 8, m: 9, w: 0, type: 'sec-1'},
 {name: 'Mariä Geburt', d: 8, m: 9, holiday: ['LI'], type: 'rel-2'},
+{name: 'Tag der deutschen Sprache', d: 8, m: 9, w: 6, region: ['DE'], type: 'sec-3'},
 {name: 'Weltalphabetisierungstag', d: 8, m: 9, type: 'sec-2'},
 {name: 'Petrus Claver', d: 9, m: 9, type: 'rel-3'},
 {name: 'Mariä Namen', d: 12, m: 9, type: 'rel-3'},
@@ -380,6 +386,7 @@ days: [
 {name: 'Nationalfeiertag', d: 26, m: 10, holiday: ['AT'], type: 'nat-0'},
 {name: 'Wigand (Einsiedler)', d: 26, m: 10, type: 'rel-3'},
 {name: 'Gaudiosus', d: 27, m: 10, type: 'rel-3'},
+{name: 'Tag des audiovisuellen Erbes', d: 27, m: 10, type: 'sec-2'},
 {name: 'Judas Thaddäus, Simon Zelotes', d: 28, m: 10, type: 'rel-3'},
 {name: 'Weltpoliotag', d: 28, m: 10, type: 'sec-2'},
 {name: 'Beda Venerabilis', d: 29, m: 10, type: 'rel-3'},
@@ -444,6 +451,7 @@ days: [
 {name: 'Tag der Menschenrechte', d: 10, m: 12, type: 'sec-1'},
 {name: {de: '3. Adventssonntag', 'de-AT': '3. Adventsonntag', en: '3. Advent Sunday'}, d: 11, m: 12, w: 0, type: 'rel-0'},
 {name: 'Damasus I.', d: 11, m: 12, type: 'rel-3'},
+{name: 'Internationaler Tag der Berge', d: 11, m: 12, type: 'sec-2'},
 {name: 'Unsere Liebe Frau von Guadalupe, Vizelin von Oldenburg', d: 12, m: 12, type: 'rel-3'},
 {name: 'Lucia von Syrakus, Odilia', d: 13, m: 12, type: 'rel-3'},
 {name: 'Berthold von Regensburg, Johannes vom Kreuz', d: 14, m: 12, type: 'rel-3'},
@@ -537,10 +545,10 @@ languageFallback: {
 	en: 'de'
 },
 libraries: {
-	'<a href="https://www.wikipedia.org" target="_blank">Wikipedia</a>': {de: 'die Daten', en: 'the data'},
-	'<a href="http://agafonkin.com/en" target="_blank">Vladimir Agafonkin</a>': '<a href="https://github.com/mourner/suncalc" target="_blank">suncalc</a>',
-	'<a href="https://github.com/ryanseys" target="_blank">Ryan Seys</a>': '<a href="https://github.com/ryanseys/lune" target="_blank">lune</a>',
-	'<a href="https://commons.wikimedia.org/wiki/User:JayTanner/lunar-near-side-phase-set" target="_blank">Jay Tanner</a>': {de: 'die Bilder vom Mond (<a href="http://creativecommons.org/licenses/by-sa/3.0/legalcode" target="_blank">CC-BY-SA</a>)', en: 'the images of the moon (<a href="http://creativecommons.org/licenses/by-sa/3.0/legalcode" target="_blank">CC-BY-SA</a>)'}
+	'<a href="https://www.wikipedia.org" target="_blank" rel="noopener">Wikipedia</a>': {de: 'die Daten', en: 'the data'},
+	'<a href="http://agafonkin.com/en" target="_blank" rel="noopener">Vladimir Agafonkin</a>': '<a href="https://github.com/mourner/suncalc" target="_blank">suncalc</a>',
+	'<a href="https://github.com/ryanseys" target="_blank" rel="noopener">Ryan Seys</a>': '<a href="https://github.com/ryanseys/lune" target="_blank">lune</a>',
+	'<a href="https://commons.wikimedia.org/wiki/User:JayTanner/lunar-near-side-phase-set" target="_blank" rel="noopener">Jay Tanner</a>': {de: 'die Bilder vom Mond (<a href="http://creativecommons.org/licenses/by-sa/3.0/legalcode" target="_blank" rel="noopener">CC-BY-SA</a>)', en: 'the images of the moon (<a href="http://creativecommons.org/licenses/by-sa/3.0/legalcode" target="_blank" rel="noopener">CC-BY-SA</a>)'}
 },
 l10n: {
 	months: {
@@ -592,7 +600,7 @@ l10n: {
 			moon: 'Mond: ', none: 'keine Anzeige', phase: 'nur Mondphase', zodiac: 'auch Tierkreiszeichen',
 			thanks: 'Dank an:', 'for': ' für ',
 			heading: 'Konfiguration', save: 'Speichern', discard: 'Verwerfen',
-			help: '<b>Benutzung</b> <ul> <li><b>Tagesansicht</b><ul> <li>Blättern durch Wischgesten nach links oder rechts</li> <li>Direktauswahl des Datums am unteren Bildschirmrand</li> </ul></li> <li><b>Monatsübersicht</b><ul> <li>Blättern durch Wischen nach links oder rechts</li> <li>Wechsel zur Tagesansicht durch Antippen des gewünschten Datums</li> </ul></li> <li><b>Suche</b><ul> <li>Starten über Lupensymbol am oberen Bildschirmrand</li> <li>unterscheidet nicht zwischen Groß- und Kleinschreibung</li> <li>wechselt in Tagesansicht zum nächsten passenden Datum</li> <li>beim Blättern werden nur passende Daten angezeigt</li> <li>in Monatsübersicht werden passende Daten hervorgehoben</li> </ul></li> <li><b>Konfiguration</b><ul> <li>Aufruf über Zahnradsymbol am oberen Bildschirmrand</li> <li>Sprache (inkl. österreichischem und Schweizer Deutsch)</li> <li>Region (für Anzeige der Feiertage)</li> <li>Feier- und Gedenktage in mehreren Stufen einstellbar</li> <li>optional: Ort für Auf- und Untergangszeiten von Sonne und Mond</li> <li>optional: Mondphase und Tierkreiszeichen, in dem der Mond sich befindet</li> </ul></li> </ul>', source: 'Diese App ist freie Software, ihr Quellcode kann auf <a href="https://github.com/Schnark/calender" target="_blank">Github</a> heruntergeladen werden. Diese Software wird ohne ausdrückliche oder implizierte Garantie bereitgestellt.'
+			help: '<b>Benutzung</b> <ul> <li><b>Tagesansicht</b><ul> <li>Blättern durch Wischgesten nach links oder rechts</li> <li>Direktauswahl des Datums am unteren Bildschirmrand</li> </ul></li> <li><b>Monatsübersicht</b><ul> <li>Blättern durch Wischen nach links oder rechts</li> <li>Wechsel zur Tagesansicht durch Antippen des gewünschten Datums</li> </ul></li> <li><b>Suche</b><ul> <li>Starten über Lupensymbol am oberen Bildschirmrand</li> <li>unterscheidet nicht zwischen Groß- und Kleinschreibung</li> <li>wechselt in Tagesansicht zum nächsten passenden Datum</li> <li>beim Blättern werden nur passende Daten angezeigt</li> <li>in Monatsübersicht werden passende Daten hervorgehoben</li> </ul></li> <li><b>Konfiguration</b><ul> <li>Aufruf über Zahnradsymbol am oberen Bildschirmrand</li> <li>Sprache (inkl. österreichischem und Schweizer Deutsch)</li> <li>Region (für Anzeige der Feiertage)</li> <li>Feier- und Gedenktage in mehreren Stufen einstellbar</li> <li>optional: Ort für Auf- und Untergangszeiten von Sonne und Mond</li> <li>optional: Mondphase und Tierkreiszeichen, in dem der Mond sich befindet</li> </ul></li> </ul>', source: 'Diese App ist freie Software, ihr Quellcode kann auf <a href="https://github.com/Schnark/calender" target="_blank" rel="noopener">Github</a> heruntergeladen werden. Diese Software wird ohne ausdrückliche oder implizierte Garantie bereitgestellt.'
 		},
 		en: {
 			lang: 'Language: ', region: 'Region: ', riseSet: 'Times for rise and set',
@@ -601,7 +609,7 @@ l10n: {
 			moon: 'Moon: ', none: 'none', phase: 'phase only', zodiac: 'including zodiac',
 			thanks: 'Thanks to:', 'for': ' for ',
 			heading: 'Configuration', save: 'Save', discard: 'Discard',
-			help: '<b>Usage</b> <ul> <li><b>Day view</b><ul> <li>Browse by swiping left or right</li> <li>Select date with buttons at the end of the screen</li> </ul></li> <li><b>Month view</b><ul> <li>Browse by swiping left or right</li> <li>Change to day view by tapping the date</li> </ul></li> <li><b>Search</b><ul> <li>Start with the magnifying glass at the start of the screen</li> <li>Case insensitive</li> <li>In day view will show next matching date</li> <li>While browsing only matching dates are shown</li> <li>In month view matching dates are highlighted</li> </ul></li> <li><b>Configuration</b><ul> <li>Start with cog symbol at the start of the screen</li> <li>Language (including English)</li> <li>Region (for display of holidays)</li> <li>Holidays and commemorative days configurable in different stages</li> <li>Optional: location for times for sunrise, sunset, moonrise and moonset</li> <li>Optional: phase of the moon and sign of zodiac which it is in</li> </ul></li> </ul>', source: 'This app is free software, its source code can be downloaded from <a href="https://github.com/Schnark/calender" target="_blank">Github</a>. This software is provided \'as-is\', without any express or implied warranty.'
+			help: '<b>Usage</b> <ul> <li><b>Day view</b><ul> <li>Browse by swiping left or right</li> <li>Select date with buttons at the end of the screen</li> </ul></li> <li><b>Month view</b><ul> <li>Browse by swiping left or right</li> <li>Change to day view by tapping the date</li> </ul></li> <li><b>Search</b><ul> <li>Start with the magnifying glass at the start of the screen</li> <li>Case insensitive</li> <li>In day view will show next matching date</li> <li>While browsing only matching dates are shown</li> <li>In month view matching dates are highlighted</li> </ul></li> <li><b>Configuration</b><ul> <li>Start with cog symbol at the start of the screen</li> <li>Language (including English)</li> <li>Region (for display of holidays)</li> <li>Holidays and commemorative days configurable in different stages</li> <li>Optional: location for times for sunrise, sunset, moonrise and moonset</li> <li>Optional: phase of the moon and sign of zodiac which it is in</li> </ul></li> </ul>', source: 'This app is free software, its source code can be downloaded from <a href="https://github.com/Schnark/calender" target="_blank" rel="noopener">Github</a>. This software is provided \'as-is\', without any express or implied warranty.'
 		}
 	}
 }

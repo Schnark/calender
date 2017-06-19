@@ -1,0 +1,6 @@
+Sources:
+
+lune.js from https://github.com/ryanseys/lune (old version, with some patches as indicated).
+suncalc.js from https://github.com/mourner/suncalc
+
+See the respective files for licenses.

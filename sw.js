@@ -2,7 +2,7 @@
 (function (worker) {
 "use strict";
 
-var VERSION = 'v2.4',
+var VERSION = 'v2.5',
 	FILES = [
 		'index.html',
 		'style.css',
@@ -44,8 +44,8 @@ var VERSION = 'v2.4',
 		'js/manage-data.js',
 		'js/render.js',
 		'js/settings.js',
-		'lune-master/lib/lune.js',
-		'suncalc-master/suncalc.js'
+		'js/lib/lune.js',
+		'js/lib/suncalc.js'
 	];
 
 worker.addEventListener('install', function (e) {
