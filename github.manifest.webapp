@@ -1,8 +1,8 @@
 {
-	"version": "2.6",
+	"version": "2.7",
 	"name": "Day calendar",
 	"description": "Calendar with different information about each day",
-	"size": 105720,
+	"size": 100357,
 	"package_path": "https://schnark.github.io/calender/calender.zip",
 	"icons": {
 		"128": "/img/icon128.png",
@@ -12,7 +12,6 @@
 		"name": "Michael Müller",
 		"url": "https://github.com/Schnark"
 	},
-	"installs_allowed_from": ["*"],
 	"default_locale": "en",
 	"locales": {
 		"de": {

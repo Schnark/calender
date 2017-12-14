@@ -208,6 +208,7 @@ function clickHandler (id) {
 		break;
 	case 'button-save':
 		settings.save(settings.read());
+		document.documentElement.lang = settings.get().lang;
 		/*falls through*/
 	case 'button-discard':
 		if (currentView === 'date') {
@@ -267,6 +268,7 @@ function init () {
 	initEvents(swipeHandler, clickHandler, inputHandler);
 	exactDate();
 	toggleSearch(false);
+	document.documentElement.lang = settings.get().lang;
 }
 
 init();
