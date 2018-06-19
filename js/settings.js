@@ -2,8 +2,8 @@
 "use strict";
 
 var defaultConfig;
-defaultConfig = {region: 'DE-BW', lang: 'de', types: {sec: 1, rel: 1},
-	riseSet: 1, moon: 1, lat: 47.994828, lon: 7.849881, version: 1};
+defaultConfig = {region: 'DE', lang: 'de', types: {sec: 1, rel: 1},
+	riseSet: 1, moon: 1, lat: 50, lon: 10, version: 1};
 
 function updateData (data) {
 	/*jshint onecase: true*/
@@ -15,10 +15,10 @@ function updateData (data) {
 }
 
 function getSettings () {
-	var data = localStorage.getItem('config');
-	if (data !== null) {
-		data = JSON.parse(data);
-	} else {
+	var data;
+	try {
+		data = JSON.parse(localStorage.getItem('config') || 'x');
+	} catch (e) {
 		data = defaultConfig;
 	}
 	data = updateData(data);
@@ -26,7 +26,10 @@ function getSettings () {
 }
 
 function saveSettings (settings) {
-	localStorage.setItem('config', JSON.stringify(settings));
+	try {
+		localStorage.setItem('config', JSON.stringify(settings));
+	} catch (e) {
+	}
 }
 
 function readSettings () {
