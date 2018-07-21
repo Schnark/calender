@@ -394,7 +394,7 @@ days: [
 {name: 'Bernhard Schwentner', d: 30, m: 10, type: 'rel-3'},
 {name: {de: 'Reformationstag', en: 'Reformation Day'}, d: 31, m: 10, Y: 2016, holiday: ['DE-BB', 'DE-MV', 'DE-SN', 'DE-ST', 'DE-TH'], type: 'rel-0'},
 {name: {de: 'Reformationstag', en: 'Reformation Day'}, d: 31, m: 10, y: 2017, Y: 2017, holiday: ['DE'], type: 'rel-0'},
-{name: {de: 'Reformationstag', en: 'Reformation Day'}, d: 31, m: 10, y: 2018, holiday: ['DE-BB', 'DE-HH', 'DE-MV', 'DE-SH', 'DE-SN', 'DE-ST', 'DE-TH'], type: 'rel-0'},
+{name: {de: 'Reformationstag', en: 'Reformation Day'}, d: 31, m: 10, y: 2018, holiday: ['DE-BB', 'DE-HB', 'DE-HH', 'DE-MV', 'DE-NI', 'DE-SH', 'DE-SN', 'DE-ST', 'DE-TH'], type: 'rel-0'},
 {name: 'Wolfgang von Regensburg', d: 31, m: 10, type: 'rel-3'},
 //November
 {name: {de: 'Allerheiligen', en: 'All Saints’ Day'}, d: 1, m: 11, holiday: ['AT', 'DE-BW', 'DE-BY', 'DE-NW', 'DE-RP', 'DE-SL', 'LI'], type: 'rel-1'},
