@@ -1,8 +1,8 @@
 {
-	"version": "2.10",
+	"version": "2.11",
 	"name": "Day calendar",
 	"description": "Calendar with different information about each day",
-	"size": 100357,
+	"size": 100366,
 	"package_path": "http://localhost:8080/calender.zip",
 	"icons": {
 		"128": "/img/icon128.png",
