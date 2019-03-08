@@ -339,6 +339,7 @@ days: [
 {name: 'Januarius', d: 19, m: 9, type: 'rel-3'},
 {name: {de: 'Herbstanfang', en: 'Fall equinox'}, a: 'equinoxFall', type: 'sec-0'},
 {name: 'Andreas Kim Taegon, Paul Chong Hasang und seine Gefährten', d: 20, m: 9, type: 'rel-3'},
+{name: 'Weltkindertag', d: 20, m: 9, holiday: ['DE-TH'], type: 'sec-1'},
 {name: 'Matthäus', d: 21, m: 9, type: 'rel-3'},
 {name: 'Internationaler Friedenstag', d: 21, m: 9, type: 'sec-2'},
 {name: 'Mauritius, Otto von Freising', d: 22, m: 9, type: 'rel-3'},
@@ -488,7 +489,7 @@ days: [
 {name: 'Pessach', d: 15, m: 7, jewish: true, type: 'rel-2'}
 ],
 shiftIslamic: {
-	//abgeleitet aus Daten des KRM
+	//abgeleitet aus Daten des KRM/http://islam.de/2860
 	'DE': {
 		'20131101': -1,
 		'20150101': 0,
@@ -502,7 +503,21 @@ shiftIslamic: {
 		'20171101': 0,
 		'20180801': -1,
 		'20190501': 0,
-		'20190801': -1
+		'20190601': -1,
+		'20200101': 0,
+		'20210801': -1,
+		'20220715': 0,
+		'20230401': -1,
+		'20230701': 0,
+		'20240601': -1,
+		'20250101': 0,
+		'20250315': -1,
+		'20260101': 0,
+		'20260601': -1,
+		'20270101': 0,
+		'20270301': -1,
+		'20270601': 0,
+		'20270801': -1
 	}
 },
 languages: {
