@@ -3,7 +3,7 @@
 "use strict";
 
 var PREFIX = 'calender',
-	VERSION = '2.12',
+	VERSION = '2.13',
 	FILES = [
 		'index.html',
 		'style.css',
