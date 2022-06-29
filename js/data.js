@@ -99,7 +99,7 @@ days: [
 {name: 'Fridolin von Säckingen', d: 6, m: 3, type: 'rel-3'},
 {name: 'Perpetua und Felicitas, Volker von Segeberg', d: 7, m: 3, type: 'rel-3'},
 {name: 'Johannes von Gott', d: 8, m: 3, type: 'rel-3'},
-{name: 'Internationaler Frauentag', d: 8, m: 3, holiday: ['DE-BE'], type: 'sec-1'},
+{name: 'Internationaler Frauentag', d: 8, m: 3, holiday: ['DE-BE', 'DE-MV'], type: 'sec-1'},
 {name: 'Bruno von Querfurt, Franziska von Rom', d: 9, m: 3, type: 'rel-3'},
 {name: 'Johannes Baptist Righi', d: 12, m: 3, type: 'rel-3'},
 {name: 'Mathilde', d: 14, m: 3, type: 'rel-3'},
